@@ -6,46 +6,45 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   padding-top: 62px;
-  text-align: center;
 }
 
-#main-menu li a {
+#block-menu-block-1 li a {
   text-decoration: none;
   color: #7ab602;
   clear: both;
   font-family: Segoe;
 }
 
-#main-menu li a:hover {
+#block-menu-block-1 li a:hover {
   color: #e8b22b;
 }
 
-#main-menu li {
+#block-menu-block-1 li {
   text-align: center;
   width: 18%;
 }
 
-#main-menu li.menu-171:before {
+#block-menu-block-1 li.menu-mlid-171:before {
   content: "выпускной";
   display: block;
 }
 
-#main-menu li.menu-172:before {
+#block-menu-block-1 li.menu-mlid-172:before {
   content: "выпускной";
   display: block;
 }
 
-#main-menu li.menu-173:before {
+#block-menu-block-1 li.menu-mlid-173:before {
   content: "выпускной";
   display: block;
 }
 
-#main-menu li.menu-174:before {
+#block-menu-block-1 li.menu-mlid-174:before {
   content: "посетите";
   display: block;
 }
 
-#main-menu li.menu-175:before {
+#block-menu-block-1 li.menu-mlid-175:before {
   content: "узнайте";
   display: block;
 }
@@ -70,4 +69,42 @@ body {
   font-family: Segoe;
   color: #7ab602;
   margin: 0 10px;
+}
+
+.view-main-gallery-block #views_slideshow_controls_text_main_gallery_block-page a:hover {
+  text-decoration: none;
+  color: #e8b22b;
+}
+
+/* Dropdown lists */
+#block-menu-block-1 ul li.expanded ul.menu {
+  background-image: url(../images/background.png);
+  display: none;
+  position: absolute;
+  width: 200px;
+  z-index: 100;
+  clear: both;
+  border-radius: 10px;
+  padding-top: 10px;
+}
+
+#block-menu-block-1 ul li.expanded ul.menu li {
+  border: 0;
+  clear: both;
+}
+
+#block-menu-block-1 ul li.expanded ul.menu li a {
+ 
+  border: 0;
+  display: block;
+  line-height: 5px;
+  width: 200px;
+  height: 20px;
+  clear: both;
+}
+
+ul li.expanded {
+  display: block;
+  list-style-image: none;
+  list-style-type: none;
 }
