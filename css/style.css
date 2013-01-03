@@ -1,0 +1,51 @@
+body {
+  background-image: url(../images/background.png);
+}
+
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#main-menu li a {
+  text-decoration: none;
+  color: #7ab602;
+  clear: both;
+  font-family: Segoe;
+}
+
+#main-menu li {
+  text-align: center;
+  width: 18%;
+}
+
+#main-menu li.menu-171:before {
+  content: "выпускной";
+  display: block;
+}
+
+#main-menu li.menu-172:before {
+  content: "выпускной";
+  display: block;
+}
+
+#main-menu li.menu-173:before {
+  content: "выпускной";
+  display: block;
+}
+
+#main-menu li.menu-174:before {
+  content: "посетите";
+  display: block;
+}
+
+#main-menu li.menu-175:before {
+  content: "узнайте";
+  display: block;
+}
+
+@font-face {
+  font-family: Segoe; 
+  src: local("Segoe"), 
+       url(../font/segoesc.ttf);
+}
