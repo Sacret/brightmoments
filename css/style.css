@@ -5,6 +5,8 @@ body {
 #main {
   max-width: 1000px;
   margin: 0 auto;
+  padding-top: 62px;
+  text-align: center;
 }
 
 #main-menu li a {
@@ -12,6 +14,10 @@ body {
   color: #7ab602;
   clear: both;
   font-family: Segoe;
+}
+
+#main-menu li a:hover {
+  color: #e8b22b;
 }
 
 #main-menu li {
@@ -48,4 +54,20 @@ body {
   font-family: Segoe; 
   src: local("Segoe"), 
        url(../font/segoesc.ttf);
+}
+
+.view-main-gallery-block #views_slideshow_cycle_main_main_gallery_block-page img {
+  border: 20px solid white;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.view-main-gallery-block #views_slideshow_controls_text_main_gallery_block-page {
+  text-align: center;
+}
+
+.view-main-gallery-block #views_slideshow_controls_text_main_gallery_block-page a {
+  text-decoration: none;
+  font-family: Segoe;
+  color: #7ab602;
+  margin: 0 10px;
 }
