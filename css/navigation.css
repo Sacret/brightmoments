@@ -72,6 +72,7 @@ li a.active {
 }
 
 .region-navigation {
+  width: 113%;
 }
 
 /*
@@ -82,7 +83,9 @@ li a.active {
 }
 
 #secondary-menu {
-  float: right; /* LTR */
+  position: absolute;
+  top: 26px;
+  right: 0px;
 }
 
 /*

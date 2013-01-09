@@ -11,9 +11,9 @@
 // - http://drupal.org/node/1446420
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
-
-
-// Place your code here.
-
-
+  $().ready(function(){
+    console.log(1);
+    $('.views-slideshow-pager-field-item').first().before('<div class="before-widget"></div>');
+    $('.views-slideshow-pager-field-item').last().after('<div class="after-widget"></div>');
+  });
 })(jQuery, Drupal, this, this.document);

@@ -14,10 +14,11 @@
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 0;  
 }
 
 #page {
+
 }
 
 /*
@@ -45,20 +46,17 @@ body {
 #header {
 }
 
-#logo { /* Wrapping link for logo */
-  float: left; /* LTR */
-  margin: 0;
+#logo { /* Wrapping link for logo */   
   padding: 0;
+  text-align: center;
+  display: block;
 }
 #logo img {
   vertical-align: bottom;
-  padding-top: 45px;
-  padding-bottom: 20px;
-  padding-left: 98px;
 }
 
 #name-and-slogan { /* Wrapper for website name and slogan */
-  float: left;
+  text-align: center;
 }
 
 #site-name { /* The name of the website */
@@ -79,6 +77,12 @@ body {
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
   font-size: 1em;
+  font-family: Calibri;
+  font-weight: normal;
+  color: #4a4a49;
+  padding-left: 110px;
+  position: relative;
+  top: -38px;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -90,6 +94,7 @@ body {
  */
 
 #main {
+
 }
 
 /*
@@ -97,6 +102,7 @@ body {
  */
 
 #content {
+
 }
 
 .region-highlighted {
