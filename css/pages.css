@@ -44,6 +44,7 @@ body {
  */
 
 #header {
+  padding-bottom: 6px;
 }
 
 #logo { /* Wrapping link for logo */   
@@ -76,13 +77,13 @@ body {
 
 #site-slogan { /* The slogan (or tagline) of a website */
   margin: 0;
-  font-size: 1em;
+  font-size: 0.8em;
   font-family: Calibri;
   font-weight: normal;
-  color: #4a4a49;
-  padding-left: 110px;
+  color: #898989;
+  padding-left: 78px;
   position: relative;
-  top: -38px;
+  top: -27px;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
@@ -102,7 +103,8 @@ body {
  */
 
 #content {
-
+  position: relative;
+  top: -8px;
 }
 
 .region-highlighted {
