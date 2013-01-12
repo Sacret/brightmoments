@@ -1,3 +1,9 @@
+html {
+  background: #f8f8f5;
+  background-image: url(../images/background-footer.png);
+  background-repeat: repeat-y;
+  background-position: center;
+}
 body {
   background: #f8f8f5;
   background-image: url(../images/background.png);
@@ -5,22 +11,23 @@ body {
   background-position: center;
 }
 
+#header {
+  background: #f8f8f5;
+}
+
 #page {
   max-width: 928px;
 }
 
+#main #content, #main #navigation {
+  padding: 0;
+}
+
 #main {
+  background: #f8f8f5;
   max-width: 928px;
   margin: 0 auto;
   padding-top: 58px;
-}
-
-#footer, .region-bottom {
-  background-image: url(../images/background-footer.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 33px;
-  margin-top: 20px;
 }
 
 #block-menu-block-1 li a {
@@ -155,13 +162,13 @@ body {
 
 .view-id-Gallery .views-slideshow-controls-text  {
   clear: both;
-  position: relative;
+  position: relative; 
   top: -20px;
 }
 
 .view-id-Gallery .views-slideshow-controls-bottom {
   text-align: center;
-  height: 90px;
+  height: 100px;
 }
 
 .view-id-Gallery .views-slideshow-controls-bottom .before-widget{
@@ -180,6 +187,16 @@ body {
   height: 102px;
   width: 32px;
   cursor: pointer;
+}
+
+.view-id-Gallery .views-slideshow-controls-bottom .slider-container{
+  max-width: 844px;
+  overflow: auto;
+  float: left;
+}
+
+.view-id-Gallery .views-slideshow-controls-bottom .slider-container .slider-scroll{
+ /* width: 2000px;*/
 }
 
 .view-id-Gallery .views-slideshow-pager-fields {  
