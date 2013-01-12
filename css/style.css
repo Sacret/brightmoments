@@ -191,6 +191,7 @@ body {
 
 .view-id-Gallery .views-slideshow-controls-bottom .slider-container{
   max-width: 844px;
+  min-height: 109px;
   overflow: auto;
   float: left;
 }
