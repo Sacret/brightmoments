@@ -12,8 +12,20 @@
 // - http://www.adequatelygood.com/2010/3/JavaScript-Module-Pattern-In-Depth
 (function ($, Drupal, window, document, undefined) {
   $().ready(function(){
-    console.log(1);
     $('.views-slideshow-pager-field-item').first().before('<div class="before-widget"></div>');
     $('.views-slideshow-pager-field-item').last().after('<div class="after-widget"></div>');
+    
+    // prev
+    $('.before-widget').click(function() {
+      Drupal.viewsSlideshow.action({ "action": 'previousSlide', "slideshowID": 'main_gallery_block-page' });
+      return false;
+    });
+
+    //next
+     $('.after-widget').click(function() {
+      Drupal.viewsSlideshow.action({ "action": 'nextSlide', "slideshowID": 'main_gallery_block-page' });
+      return false;
+    });
+
   });
 })(jQuery, Drupal, this, this.document);
