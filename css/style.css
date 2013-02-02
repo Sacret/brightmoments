@@ -1,4 +1,4 @@
-html {
+﻿html {
   background: #f8f8f5;
   background-image: url(../images/background-footer.png);
   background-repeat: repeat-y;
@@ -8,11 +8,24 @@ body {
   background: #f8f8f5;
   background-image: url(../images/background.png);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 50% 160px;
 }
 
 #header {
   background: #f8f8f5;
+}
+
+#name-and-slogan a {
+  text-decoration: none;  
+  color: #898989;
+  font-size: 14px;
+}
+
+#site-slogan {
+  font-size: 15px;
+  font-family: Calibri;
+  font-weight: normal;
+  top: -34px;
 }
 
 #page {
@@ -20,12 +33,15 @@ body {
 }
 
 #main #content, #main #navigation {
-  padding: 0;
+  padding: 0;  
+}
+
+#main #navigation {
+  top: -5px;
 }
 
 #main {
   background: #f8f8f5;
-  max-width: 928px;
   margin: 0 auto;
   padding-top: 58px;
 }
@@ -65,7 +81,7 @@ body {
   padding-right: 46px;
 }
 
-#block-menu-block-1 li.menu-mlid-273 {
+#block-menu-block-1 li.menu-mlid-303 {
   width: 164px;
   padding-right: 53px;
 }
@@ -83,8 +99,7 @@ body {
   content: "выпускной";
   display: block;
   font-size: 14px;
-  color: #656564;
-  font-weight: bold;
+  color: #898989;
   padding-right: 5px;
 }
 
@@ -92,8 +107,7 @@ body {
   content: "выпускной";
   display: block;
   font-size: 14px;
-  color: #656564;
-  font-weight: bold;
+  color: #898989;
   padding-right: 2px;
 }
 
@@ -101,17 +115,15 @@ body {
   content: "фотосъемка";
   display: block;
   font-size: 14px;
-  color: #656564;
-  font-weight: bold;
+  color: #898989;
   padding-right: 22px;
 }
 
-#block-menu-block-1 li.menu-mlid-273:before {
+#block-menu-block-1 li.menu-mlid-303:before {
   content: "как";
   display: block;
   font-size: 14px;
-  color: #656564;
-  font-weight: bold;
+  color: #898989;
   padding-right: 10px;
 }
 
@@ -119,8 +131,7 @@ body {
   content: "контакты";
   display: block;
   font-size: 14px;
-  color: #656564;
-  font-weight: bold;
+  color: #898989;
   padding-right: 2px;
 }
 
@@ -132,7 +143,7 @@ body {
 
 .view-id-Gallery .views-slideshow-cycle-main-frame-row-item img {
   border: 13px solid white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 }
 
 .view-id-Gallery .views-slideshow-controls-text a {
@@ -162,8 +173,10 @@ body {
 
 .view-id-Gallery .views-slideshow-controls-text  {
   clear: both;
-  position: relative; 
-  top: -20px;
+  position: relative;
+  top: -28px !important;
+  width: 500px;
+  margin: 0 auto;
 }
 
 .view-id-Gallery .views-slideshow-controls-bottom {
@@ -173,26 +186,41 @@ body {
 
 .view-id-Gallery .views-slideshow-controls-bottom .before-widget{
   float: left;
-  background-image: url(../images/bracket-left.png);
+  background-image: url(../images/bracket-left-active.png);
   background-repeat: no-repeat;
   height: 102px;
-  width: 32px;
+  width: 26px;
   cursor: pointer;
+  opacity: 0.4;
+}
+
+.view-id-Gallery .views-slideshow-controls-bottom .before-widget:hover{
+  opacity: 1;
 }
 
 .view-id-Gallery .views-slideshow-controls-bottom .after-widget{
   float: left;
-  background-image: url(../images/bracket-right.png);
+  background-image: url(../images/bracket-right-active.png);
   background-repeat: no-repeat;
   height: 102px;
-  width: 32px;
+  width: 25px;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.view-id-Gallery .views-slideshow-controls-bottom .after-widget:hover{
+  opacity: 1;
+}
+
+.view-id-Gallery .views-slideshow-cycle-main-frame-row img {
   cursor: pointer;
 }
 
 .view-id-Gallery .views-slideshow-controls-bottom .slider-container{
-  max-width: 844px;
+  max-width: 873px;
+  padding-left: 4px;
   min-height: 109px;
-  overflow: auto;
+  overflow: hidden;
   float: left;
 }
 
@@ -204,22 +232,29 @@ body {
   display: inline-block;
 }
 
-.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item {
-  padding-top: 5px;
-}
-
 .view-id-Gallery .views-slideshow-pager-fields .views-field-field-main-photo img {  
  /* border: 5px solid white;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);*/
   margin: 5px;  
 }
 
-.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item {
-  opacity: 0.4;
+.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item {  
+  float: left;
+  padding-top: 5px;
 }
 
-.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item {
-  float: left;
+.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item img{
+  opacity: 0.4;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item img:hover{
+  border: 2px solid #e8b22b;
+}
+
+.view-id-Gallery .views-slideshow-pager-fields .views-slideshow-pager-field-item.active img{
+  opacity: 1;
 }
 
 /* Dropdown lists */
@@ -232,6 +267,7 @@ body {
   border-radius: 0 0 10px 10px;
   padding: 20px 5px 5px 5px;
   margin-top:10px;
+  margin-left: -10px;
 }
 
 #block-menu-block-1 ul li.expanded ul.menu li {
@@ -253,9 +289,17 @@ ul li.expanded {
   list-style-type: none;
 }
 
-#page .field-name-field-article-image img {
+#page .node-9 .field-name-field-article-image img {
   float: left;
   margin-right: 13px;
+  border: 1px solid black;
+  height: 456px;
+  width: 456px;
+}
+
+#page .node-98 .field-name-field-article-image img {
+  float: right;
+  margin-left: 13px;
   border: 1px solid black;
 }
 
@@ -263,21 +307,47 @@ ul li.expanded {
   border: 13px solid white;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   background: white;
-  min-width: 906px;
+  width: 912px;
+  height:460px;
   font-family: Calibri;
-  font-size: 16px;
+  font-size: 14px;
   text-align: center;
-  color: #4a4a4a;
-  line-height: 1em;
+  color: #555555;
+  line-height: 1.3em;
 }
 
 #page .node-article .price {
-  color: #7ab602;
   font-family: Segoe;
+  color: #7ab602;
   font-weight: bold;
 }
 
 #page .node-article .phone {
   color: #7ab602;
-  font-family: Segoe;
+}
+
+#page .node-article .phone a{
+  color: #7ab602;
+  text-decoration: none;
+}
+
+#page .node-article .phone a:hover{
+  color: #e8b22b;
+  text-decoration: none;
+}
+
+#page .node-9 .field-name-body {
+  padding-top: 50px;
+  background: url(../images/flower.png);
+  background-position: 670px 0px;
+  background-repeat: no-repeat;
+  background-size: 40px;
+}
+
+#page .node-98 .field-name-body .field-items{
+  padding-top: 5px;
+}
+
+.view-id-Gallery .views-slideshow-pager-fields .slider-scroll {
+  margin-left: 0;
 }

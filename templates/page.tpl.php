@@ -87,7 +87,7 @@
         <?php endif; ?>
 
         <?php if ($site_slogan): ?>
-          <h2 id="site-slogan"><?php print $site_slogan; ?></h2>
+          <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><h2 id="site-slogan"><?php print $site_slogan; ?></h2></a>
         <?php endif; ?>
       </hgroup><!-- /#name-and-slogan -->
     <?php endif; ?>

@@ -44,7 +44,7 @@ body {
  */
 
 #header {
-  padding-bottom: 12px;
+  padding-bottom: 0px;
 }
 
 #logo { /* Wrapping link for logo */   
@@ -76,14 +76,10 @@ body {
 }
 
 #site-slogan { /* The slogan (or tagline) of a website */
-  margin: 0;
-  font-size: 15px;
-  font-family: Calibri;
-  font-weight: normal;
-  color: #898989;
+  margin: 0;  
   padding-left: 107px;
   position: relative;
-  top: -30px;
+  top: -43px;
 }
 
 .region-header { /* Wrapper for any blocks placed in the header region */
